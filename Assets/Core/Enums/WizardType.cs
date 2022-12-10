@@ -1,13 +1,16 @@
-﻿public enum WizardType
+﻿namespace Assets.Core.Enums
 {
-    CHRONOMANCER,
-    ELEMENTALIST,
-    ENCHANTER,
-    ILLUSIONIST,
-    NECROMANCER,
-    SIGILIST,
-    SOOTHSAYER,
-    SUMMONER,
-    THAUMATURGE,
-    WITCH
+    public enum WizardType
+    {
+        CHRONOMANCER,
+        ELEMENTALIST,
+        ENCHANTER,
+        ILLUSIONIST,
+        NECROMANCER,
+        SIGILIST,
+        SOOTHSAYER,
+        SUMMONER,
+        THAUMATURGE,
+        WITCH
+    }
 }

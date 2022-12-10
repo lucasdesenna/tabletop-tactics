@@ -1,7 +1,11 @@
-﻿public enum Gender
+﻿namespace Assets.Core.Enums
 {
-    FEMALE,
-    MALE,
-    NEUTRAL,
-    OTHER
+    public enum Gender
+    {
+        FEMALE,
+        MALE,
+        NEUTRAL,
+        OTHER
+    }
 }
+
