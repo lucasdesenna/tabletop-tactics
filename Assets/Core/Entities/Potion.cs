@@ -4,12 +4,7 @@ namespace Assets.Core.Entities
 {
     public class Potion : Item
     {
-        public readonly PotionType PotionType;
-
-        public Potion(string name, string description, PotionType potionType) 
-            : base(name, description, ItemType.POTION)
-        {
-            PotionType = potionType;
-        }
+        public Potion(string name, string description, ItemType itemType, int value) 
+            : base(name, description, ItemClass.POTION, itemType, value) {}
     }
 }
