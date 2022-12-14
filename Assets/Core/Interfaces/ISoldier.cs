@@ -6,6 +6,6 @@ namespace Assets.Core.Interfaces
     {
         SoldierType SoldierType { get; }
 
-        int Cost { get; }
+        int Price { get; }
     }
 }

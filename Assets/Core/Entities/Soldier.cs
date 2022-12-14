@@ -39,8 +39,8 @@ namespace Assets.Core.Entities
         private readonly SoldierType _soldierType;
         public SoldierType SoldierType => _soldierType;
 
-        private readonly int _cost;
-        public int Cost => _cost;
+        private readonly int _price;
+        public int Price => _price;
 
         public Soldier(string name,
                       Gender gender,
@@ -51,7 +51,7 @@ namespace Assets.Core.Entities
                       int armour,
                       int will,
                       int health,
-                      int cost)
+                      int price)
         {
             _name = name;
             _gender = gender;
@@ -62,7 +62,7 @@ namespace Assets.Core.Entities
             _armour = armour;
             _will = will;
             _health = health;
-            _cost = cost;
+            _price = price;
             _itemCapacity = 1;
         }
     }
