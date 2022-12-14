@@ -7,13 +7,13 @@ namespace Assets.Core.Items
     {
         static readonly string name = "Explosive Cocktail";
         static readonly string description = "As a Grenade spell, no casting roll needed.";
-        static readonly int value = 50;
+        static readonly int price = 50;
 
         public ExplosiveCocktail() : base(
             ExplosiveCocktail.name,
             ExplosiveCocktail.description,
             ItemType.EXPLOSIVE_COCKTAIL,
-            ExplosiveCocktail.value)
+            ExplosiveCocktail.price)
         { }
     }
 }
