@@ -4,12 +4,7 @@ namespace Assets.Core.Entities
 {
     public class Equipment : Item
     {
-        public readonly EquipmentType EquipmentType;
-
-        public Equipment(string name, string description, EquipmentType equipmentType)
-            : base(name, description, ItemType.EQUIPMENT)
-        {
-            EquipmentType = equipmentType;
-        }
+        public Equipment(string name, string description, ItemType itemType, int value)
+            : base(name, description, ItemClass.EQUIPMENT, itemType, value) { }
     }
 }
