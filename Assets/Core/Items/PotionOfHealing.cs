@@ -7,13 +7,14 @@ namespace Assets.Core.Items
     {
         static readonly string name = "Potion of Healing";
         static readonly string description = "Restores up to 5 lost Health";
+        static readonly ItemType itemType = ItemType.POTION_OF_HEALING;
         static readonly int price = 50;
 
         public PotionOfHealing() : base(
-            PotionOfHealing.name,
-            PotionOfHealing.description,
-            ItemType.POTION_OF_HEALING,
-            PotionOfHealing.price)
+            name,
+            description,
+            itemType,
+            price)
         { }
     }
 }

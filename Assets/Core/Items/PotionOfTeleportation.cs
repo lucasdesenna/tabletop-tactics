@@ -7,13 +7,14 @@ namespace Assets.Core.Items
     {
         static readonly string name = "Potion of Teleportation";
         static readonly string description = "As a Teleport spell, no casting roll needed";
+        static readonly ItemType itemType = ItemType.POTION_OF_TELEPORTATION;
         static readonly int price = 100;
 
         public PotionOfTeleportation() : base(
-            PotionOfTeleportation.name,
-            PotionOfTeleportation.description,
-            ItemType.POTION_OF_TELEPORTATION,
-            PotionOfTeleportation.price)
+            name,
+            description,
+            itemType,
+            price)
         { }
     }
 }

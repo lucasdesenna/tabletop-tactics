@@ -7,13 +7,14 @@ namespace Assets.Core.Items
     {
         static readonly string name = "Potion of Invisibility";
         static readonly string description = "As an Invisibility spell, no casting roll needed";
+        static readonly ItemType itemType = ItemType.POTION_OF_INVISIBILITY;
         static readonly int price = 100;
 
         public PotionOfInvisibility() : base(
-            PotionOfInvisibility.name,
-            PotionOfInvisibility.description,
-            ItemType.POTION_OF_INVISIBILITY,
-            PotionOfInvisibility.price)
+            name,
+            description,
+            itemType,
+            price)
         { }
     }
 }

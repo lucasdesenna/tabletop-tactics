@@ -7,12 +7,14 @@ namespace Assets.Core.Items
     {
         static readonly string name = "Elixir of Life";
         static readonly string description = "As a Restore Life spell, no casting roll needed";
+        static readonly ItemType itemType = ItemType.ELIXIR_OF_LIFE;
         static readonly int price = 500;
 
         public ElixirOfLive() : base (
-            ElixirOfLive.name, 
-            ElixirOfLive.description, 
-            ItemType.ELIXIR_OF_LIFE,
-            ElixirOfLive.price) { }
+            name, 
+            description, 
+            itemType,
+            price)
+        { }
     }
 }
