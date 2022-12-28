@@ -15,20 +15,32 @@ namespace Assets.Core.Entities
         private readonly int _armour;
         public int Armour => _armour;
 
+        public int EffectiveArmour { get; set; }
+
         private readonly int _fight;
         public int Fight => _fight;
 
-        private readonly int _health;
-        public int Health => _health;
+        public int EffectiveFight { get; set; }
+
+        private readonly int _maxHealth;
+        public int MaxHealth => _maxHealth;
+
+        public int Health { get; set; }
 
         private readonly int _move;
         public int Move => _move;
 
+        public int EffectiveMove { get; set; }
+
         private readonly int _shoot;
         public int Shoot => _shoot;
 
+        public int EffectiveShoot { get; set; }
+
         private readonly int _will;
         public int Will => _will;
+
+        public int EffectiveWill { get; set; }
 
         private readonly int _itemCapacity;
         public int? ItemCapacity => _itemCapacity;
