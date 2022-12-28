@@ -1,18 +1,9 @@
 ﻿using Assets.Core.Enums;
+using Assets.Core.Interfaces;
 using System;
 
 namespace Assets.Core.Entities
 {
-    public interface IItem
-    {
-        string Name { get; }
-        string Description { get; }
-        ItemClass ItemClass { get; }
-        ItemType ItemType { get; }
-
-        int Value { get; }
-    }
-
     public abstract class Item : IItem
     {
         private readonly string _name;
@@ -28,7 +19,9 @@ namespace Assets.Core.Entities
         public ItemType ItemType => _itemType;
 
         private readonly int _value;
-        public int Value => _value;
+        public int Price => _value;
+
+        public abstract void ItemEffect(IFigure ownerFigure, IFigure targetFigure, IGameboard gameboard);
 
         static private void VerifyClassAndTypeCombination(ItemClass itemClass, ItemType itemType)
         {
