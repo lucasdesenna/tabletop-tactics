@@ -2,9 +2,9 @@
 {
     public enum CreatureCategory
     {
-        UNDEAD,
         ANIMAL,
         CONSTRUCT,
-        DEMON
+        DEMON,
+        UNDEAD
     }
 }
