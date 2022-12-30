@@ -21,6 +21,10 @@
 
         SMALL_CONSTRUCT = 200,
         MEDIUM_CONSTRUCT = 201,
-        LARGE_CONSTRUCT = 202
+        LARGE_CONSTRUCT = 202,
+
+        IMP = 300,
+        MINOR_DEMON = 301,
+        MAJOR_DEMON = 302
     }
 }

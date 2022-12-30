@@ -4,6 +4,7 @@
     {
         UNDEAD,
         ANIMAL,
-        CONSTRUCT
+        CONSTRUCT,
+        DEMON
     }
 }
