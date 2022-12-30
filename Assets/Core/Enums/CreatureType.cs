@@ -17,6 +17,10 @@
         SNOW_LEOPARD = 105,
         WHITE_GORILLA = 106,
         WILD_DOG = 107,
-        WOLF = 108
+        WOLF = 108,
+
+        SMALL_CONSTRUCT = 200,
+        MEDIUM_CONSTRUCT = 201,
+        LARGE_CONSTRUCT = 202
     }
 }
