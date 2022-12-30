@@ -1,7 +1,8 @@
 using Assets.Core.Entities;
 using Assets.Core.Enums;
+using System.Collections.Generic;
 
-namespace Assets.Core.Soldiers
+namespace Assets.Core.Warband.Soldiers
 {
     public sealed class Thug : Soldier
     {
@@ -13,6 +14,8 @@ namespace Assets.Core.Soldiers
         static readonly int will = -1;
         static readonly int health = 10;
         static readonly int price = 20;
+        static readonly List<ItemClass> allowedItemClasses = new();
+        static readonly List<IItem> items = new();
 
         public Thug(string name, Gender gender) : base(
             name,
@@ -24,7 +27,9 @@ namespace Assets.Core.Soldiers
             armour,
             will,
             health,
-            price)
+            price,
+            allowedItemClasses,
+            items)
         { }
     }
 }

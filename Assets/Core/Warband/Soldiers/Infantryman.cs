@@ -1,7 +1,7 @@
 using Assets.Core.Entities;
 using Assets.Core.Enums;
 
-namespace Assets.Core.Soldiers
+namespace Assets.Core.Warband.Soldiers
 {
     public sealed class Infantryman : Soldier
     {
