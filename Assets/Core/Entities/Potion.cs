@@ -4,7 +4,7 @@ namespace Assets.Core.Entities
 {
     public abstract class Potion : Item
     {
-        public Potion(string name, string description, ItemType itemType, int value) 
-            : base(name, description, ItemClass.POTION, itemType, value) {}
+        public Potion(string name, string description, ItemType itemType, EffectType effectType, int price) 
+            : base(name, description, ItemClass.POTION, itemType, effectType, price) {}
     }
 }

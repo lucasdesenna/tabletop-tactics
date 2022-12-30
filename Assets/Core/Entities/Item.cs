@@ -1,6 +1,7 @@
 ﻿using Assets.Core.Enums;
 using Assets.Core.Interfaces;
 using System;
+using UnityEngine;
 
 namespace Assets.Core.Entities
 {
@@ -18,10 +19,15 @@ namespace Assets.Core.Entities
         private readonly ItemType _itemType;
         public ItemType ItemType => _itemType;
 
-        private readonly int _value;
-        public int Price => _value;
+        private readonly int _price;
+        public int Price => _price;
 
-        public abstract void ItemEffect(IFigure ownerFigure, IFigure targetFigure, IGameboard gameboard);
+        private readonly EffectType _effectType;
+        public EffectType EffectType => _effectType;
+
+        public abstract void ItemEffect();
+        public abstract void ItemEffect(IFigure targetFigure);
+        public abstract void ItemEffect(IFigure targetFigure, Vector3 targetPoint);
 
         static private void VerifyClassAndTypeCombination(ItemClass itemClass, ItemType itemType)
         {
@@ -33,7 +39,7 @@ namespace Assets.Core.Entities
             }
         }
 
-        public Item(string name, string description, ItemClass itemClass, ItemType itemType, int value)
+        public Item(string name, string description, ItemClass itemClass, ItemType itemType, EffectType effectType, int price)
         {
             Item.VerifyClassAndTypeCombination(itemClass, itemType);
 
@@ -41,7 +47,8 @@ namespace Assets.Core.Entities
             _description = description;
             _itemClass = itemClass;
             _itemType = itemType;
-            _value = value;
+            _effectType = effectType;
+            _price = price;
         }
     }
 }
