@@ -5,6 +5,7 @@
         ANIMAL,
         CONSTRUCT,
         DEMON,
+        MISC,
         UNDEAD
     }
 }

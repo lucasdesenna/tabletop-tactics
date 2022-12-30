@@ -2,26 +2,30 @@
 {
     public enum CreatureType
     {
-        SKELETON,
         ARMOURED_SKELETON,
-        ZOMBIE,
-        GHOUL,
-        WRAITH,
-        VAMPIRE,
         BEAR,
         BOAR,
+        FROST_GIANT,
+        GHOUL,
         GIANT_RAT,
+        GIANT_WORM,
         ICE_SPIDER,
         ICE_TOAD,
+        IMP,
+        LARGE_CONSTRUCT,
+        MAJOR_DEMON,
+        MEDIUM_CONSTRUCT,
+        MINOR_DEMON,
+        SKELETON,
+        SMALL_CONSTRUCT,
         SNOW_LEOPARD,
+        SNOW_TROLL,
+        VAMPIRE,
+        WEREWOLF,
         WHITE_GORILLA,
         WILD_DOG,
         WOLF,
-        SMALL_CONSTRUCT,
-        MEDIUM_CONSTRUCT,
-        LARGE_CONSTRUCT,
-        IMP,
-        MINOR_DEMON,
-        MAJOR_DEMON
+        WRAITH,
+        ZOMBIE
     }
 }
