@@ -2,8 +2,12 @@
 {
     public enum Tag
     {
-        IMMATERIAL,
         DRAINS_LIFE_FORCE,
-        IMMUNE_TO_NON_MAGICAL_DAMAGE
+        IMMATERIAL,
+        IMMUNE_TO_NON_MAGICAL_DAMAGE,
+        LARGE,
+        PACK_HUNTER,
+        POWERFUL_JAWS,
+        VENOM
     }
 }

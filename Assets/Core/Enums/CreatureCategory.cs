@@ -2,6 +2,7 @@
 {
     public enum CreatureCategory
     {
-        UNDEAD
+        UNDEAD,
+        ANIMAL
     }
 }
